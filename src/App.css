@@ -111,3 +111,120 @@
 .search-btn:hover{
   color: black;
 }
+
+.post{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-container{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-container > h2{
+  color: #123E7D;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.jobs-col{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.job{
+  background-color: #fff;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10px 2px #26262763;
+  border-radius: 10px;
+}
+
+.job-img1{
+  background-image: url(./img/comapnyprofile_jtinkz.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 2px #26262763;
+}
+
+.job-img2{
+  background-image: url(./img/lq6vibtubxzbwdlp0oqs.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 2px #26262763;
+}
+
+.job-img3{
+  background-image: url(./img/kp4sgxynddjtqojynbki.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 2px #26262763;
+}
+
+.job-info > h3{
+  color: #123E7D;
+  font-size: 1.5rem;
+}
+
+.job-info > p{
+  font-size: 1.5rem;
+  margin-top: -25px;
+}
+
+.sub{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.sub > p{
+  color: #FEA250;
+}
+
+.job-info > span{
+  margin-top: -100px;
+}
+
+.sub > button{
+  width: 100px;
+  height: 40px;
+  background-color: #fea15056;
+  color: #FEA250;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.below{
+  margin-top: 50px;
+}
+
+.single-col{
+  justify-content: center;
+  align-items: center;
+}
