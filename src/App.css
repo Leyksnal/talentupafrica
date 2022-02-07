@@ -1,9 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&family=Nova+Cut&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
+header{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header-wrapper{
+  width: 80%;
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  background-image: url(./img/logo_black_new.f206e467.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 90%;
+  cursor: pointer;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.nav > p{
+  color: #123E7D;
+  cursor: pointer;
+  transition: all 350ms;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav > button{
+  width: 180px;
+  height: 60px;
+  font-size: 1.1rem;
+  color: #FEA250;
+  border: solid 1px #FEA250;
+  cursor: pointer;
+  background: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.van > button:hover{
+  box-shadow: 0px 10px 10px 12px #26262763;
+}
+
+.nav > p:hover{
+  color: #FEA250;
+}
+
 .main{
   background-color: #123E7D;
   width: 100%;
-  height: 450px;
+  height: 380px;
   display: flex;
   justify-content: space-between;
 }
@@ -18,14 +78,21 @@
   background-repeat: no-repeat;
   background-color: #fff;
   border-radius: 40px;
+  transition: all 500ms;
 }
 
 .left-angle:hover, .right-angle:hover{
-  background-color: #123E7D;
-  border-radius: 0px;
-  border: none;
-  opacity: 0.5;
+  border-radius: 20px;
+  border: solid 3px rgb(255, 255, 255);
+  background: none;
+  background-image: url(./img/angle-right-solid.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.left-angle:hover{
+  background-image: url(./img/angle-left-solid.svg);
 }
 
 .right-angle{
@@ -51,7 +118,7 @@
 }
 
 .middle-content > h2{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .middle-content > p{
@@ -109,7 +176,7 @@
 }
 
 .search-btn:hover{
-  color: black;
+  color: rgb(51, 51, 51);
 }
 
 .post{
@@ -148,6 +215,11 @@
   justify-content: space-around;
   box-shadow: 0px 0px 10px 2px #26262763;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.job:hover{
+  border: solid 0.5px rgb(5, 160, 250);
 }
 
 .job-img1{
@@ -227,4 +299,149 @@
 .single-col{
   justify-content: center;
   align-items: center;
+}
+
+.explore-btn{
+  width: 260px;
+  height: 60px;
+  font-size: 1.1rem;
+  color: #2B77CA;
+  border: solid 1px #2B77CA;
+  cursor: pointer;
+  background: none;
+  border-radius: 10px;
+  margin-top: 50px;
+  transition: all 350ms;
+}
+
+.explore-btn:hover{
+  color: #181818;
+  border: solid 1px #181818;
+}
+
+.companies{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.companies > h2{
+  color: #123E7D;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.companies-wrapper{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companies-wrapper2{
+  width: 75%;
+  margin-top: 30px;
+}
+
+.companies-img{
+  background-image: url(./img/relihmo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 100px;
+}
+
+.companies-img2{
+  background-image: url(./img/fmoney.png);
+}
+
+.companies-img3{
+  background-image: url(./img/ela.png);
+}
+
+.companies-img4{
+  background-image: url(./img/ejik.png);
+}
+
+.companies-img5{
+  background-image: url(./img/chnm.png);
+}
+
+.companies-img6{
+  background-image: url(./img/sbc.png);
+}
+
+.companies-img7{
+  background-image: url(./img/gb.png);
+}
+
+.companies-img8{
+  background-image: url(./img/zercom.png);
+}
+
+.help-wrapper{
+  width: 75%;
+}
+
+.help-img{
+  background-image: url(./img/v5.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 500px;
+}
+
+.help-text{
+  margin-bottom: 50px;
+}
+
+.help-text > h2{
+  color: #123E7D;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.help-text > p{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #313131;
+  width: 550px;
+  margin-top: -20px;
+}
+
+.help-text > h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FEA250;
+  width: 650px;
+  margin-top: -15px;
+}
+
+/* .job-wrapper{
+  width: 90%;
+} */
+
+.remote-job-img{
+  background-image: url(./img/v4.png);
+  margin-left: -50px;
+}
+
+.career > p{
+  width: 650px;
+}
+
+.showcase > h2{
+  width: 600px;
+}
+
+.showcase-img{
+  background-image: url(./img/v3.png);
+}
+
+.career-img{
+  background-image: url(./img/v2.png);
 }
