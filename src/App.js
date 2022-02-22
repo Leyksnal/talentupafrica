@@ -1,6 +1,46 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  const [ counter, setCounter ] = useState(0)
+  const bg = [
+    {
+      color: "#0dcf8c",
+      text: "Land your dream job, home and abroad",
+      subText: "We connect you with top companies hiring talented professionals in the US and Africa"
+    },
+    {
+      color: "#cf5310",
+      text: "We can help you secure jobs",
+      subText: "We connect you with top companies in the tech space"
+    },
+    {
+      color: "#cf2910",
+      text: "Lets make your dream jon a reality for you",
+      subText: "Within our network you can be hired anywhere in the world"
+    }
+  ]
+
+  const addCounter =()=>{
+    setCounter(counter +1)
+  }
+
+  const subCounter =()=>{
+    if(counter === 0){
+      setCounter(counter)
+    }else{
+      setCounter(counter -1)
+    }
+  }
+
+  // useEffect(()=>{
+  //   setInterval(()=>{
+  //     setCounter((el) => el + 1)
+  //   }, 5000)
+  // }, [])
+
+  // setInterval(addCounter, 5000)
+
   return (
     <div>
       <header>
@@ -14,11 +54,13 @@ function App() {
           </div>
         </div>
       </header>
-      <div className='main'>
-        <div className='left-angle'></div>
+      <div className='main' style={{
+        backgroundColor: bg[counter % bg.length].color
+      }}>
+        <div className='left-angle' onClick={subCounter}></div>
         <div className="middle-content">
-          <h2>Land your dream job, home and abroad</h2>
-          <p>We connect you with top companies hiring talented professionals in the US and Africa</p>
+          <h2>{bg[counter % bg.length].text}</h2>
+          <p>{bg[counter % bg.length].subText}</p>
           <div className="search-holder">
             <div className="input-search">
               <div className="search-icon"></div>
@@ -27,7 +69,7 @@ function App() {
             <button className='search-btn'>Search</button>
           </div>
         </div>
-        <div className='right-angle'></div>
+        <div className='right-angle' onClick={addCounter}></div>
       </div>
       
       <div className="post">
